@@ -73,7 +73,7 @@ default['graphite']['create_user'] = false
 
 default['graphite']['uwsgi_socket'] = '127.0.0.1:3031'
 
-default['graphite']['apache']['basic_auth'] = false
+default['graphite']['apache']['basic_auth']['enabled'] = false
 default['graphite']['apache']['basic_auth']['file_path'] = "#{node['graphite']['doc_root']}/htpasswd"
 default['graphite']['apache']['basic_auth']['user'] = nil
 default['graphite']['apache']['basic_auth']['pass'] = nil
